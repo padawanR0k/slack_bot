@@ -1,7 +1,5 @@
 import reply
 from datetime import date, datetime
-import time
-import schedule
 import bot_events
 import calendar
 
@@ -27,12 +25,6 @@ SLACK_SIGNING_SECRET = os.environ['SLACK_SIGNING_SECRET']
 VERIFICATION_TOKEN = os.environ['VERIFICATION_TOKEN']
 # 슬랙 토큰
 slack_token = os.environ['SLACK_BOT_TOKEN']
-
-print(
-    SLACK_SIGNING_SECRET,
-	VERIFICATION_TOKEN,
-    slack_token,
-)
 
 # 슬랙 봇 고유값
 SLACK_BOT_PK = '<@u01erlmhyuc>'
@@ -91,7 +83,7 @@ def handle_message(event_data):
 
 NOTICE_QR_FLAG = False
 # 매일 12시 30분에 실행
-@sched.scheduled_job('cron', id='end_qrcode', hour=18, minute=0, second=0, end_date='2021-04-21')
+@sched.scheduled_job('cron', id='end_qrcode', hour=18, minute=35, second=0, end_date='2021-04-21')
 def notice_qrcode():
 	global NOTICE_QR_FLAG
 
