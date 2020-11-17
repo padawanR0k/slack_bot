@@ -103,18 +103,19 @@ def notice_qrcode():
 							"type": "section",
 							"text": {
 								"type": "mrkdwn",
-								"text": "*혹시 퇴실처리 하셨나요?*"
+								"text": ":star: :star: :star:  *혹시 퇴실처리 하셨나요 ?* :star: :star: :star: "
 							}
 						},
 						{
 							"type": "image",
 							"title": {
 								"type": "plain_text",
-								"text": "출퇴 QR 코드",
+								"text": "아 맞다! 퇴근처리!",
 								"emoji": True
 							},
-							"image_url": "https://gist.githubusercontent.com/padawanR0k/09a9df22a6ebbffb949787ba003808b2/raw/ce86828e02d33f8bc2c57171ca310d12207f0168/qrcode.jpeg",
-							"alt_text": "qr 코드"
+							"image_url": "https://gist.github.com/padawanR0k/09a9df22a6ebbffb949787ba003808b2#file-aha-jpg",
+							# "image_url": "https://gist.githubusercontent.com/padawanR0k/09a9df22a6ebbffb949787ba003808b2/raw/ce86828e02d33f8bc2c57171ca310d12207f0168/qrcode.jpeg",
+							"alt_text": "아 맞다! 퇴근처리"
 						}
 					]
 				)
