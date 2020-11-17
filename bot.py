@@ -8,7 +8,6 @@ import calendar
 from slack import WebClient
 import json
 from flask import Flask, Response
-from flask.wrappers import JSONMixin
 from slackeventsapi import SlackEventAdapter
 import os
 from threading import Thread, Event
@@ -28,6 +27,12 @@ SLACK_SIGNING_SECRET = os.environ['SLACK_SIGNING_SECRET']
 VERIFICATION_TOKEN = os.environ['VERIFICATION_TOKEN']
 # 슬랙 토큰
 slack_token = os.environ['SLACK_BOT_TOKEN']
+
+print(
+    SLACK_SIGNING_SECRET,
+	VERIFICATION_TOKEN,
+    slack_token,
+)
 
 # 슬랙 봇 고유값
 SLACK_BOT_PK = '<@u01erlmhyuc>'
