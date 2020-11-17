@@ -1,3 +1,4 @@
+from soupsieve.css_match import LONG_MONTH
 import reply
 from datetime import date, datetime
 import bot_events
@@ -25,6 +26,10 @@ SLACK_SIGNING_SECRET = os.environ['SLACK_SIGNING_SECRET']
 VERIFICATION_TOKEN = os.environ['VERIFICATION_TOKEN']
 # 슬랙 토큰
 slack_token = os.environ['SLACK_BOT_TOKEN']
+
+print(f'''SLACK_SIGNING_SECRET :{SLACK_SIGNING_SECRET}
+      VERIFICATION_TOKEN: {VERIFICATION_TOKEN}
+      slack_token: {slack_token}''')
 
 # 슬랙 봇 고유값
 SLACK_BOT_PK = '<@u01erlmhyuc>'
